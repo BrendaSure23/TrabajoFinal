@@ -16,21 +16,21 @@ Patrón: Orientación a Objetos (Clases para Entidades y Managers)
 
 El proyecto se organiza en la siguiente estructura de carpetas y archivos:
 
-gestión-libros/
-├── ddbb/
-│   └── gestión_libros.db   <-- Archivo de la base de datos SQLite
-├── clases/
-│   ├── clase_autor.py        <-- Manager para Autores
-│   ├── clase_editorial.py    <-- Manager para Editoriales
-│   ├── clase_genero.py       <-- Manager para Géneros
-│   └── clase_libros.py       <-- Clase Libro y funciones CRUD
-├── modelo/
-│   └── consultas_dao.py      <-- Módulo de Data Access Object (conexión y consultas SQL)
-├── vistas.py
-│    └── vista.py <-- Módulo principal de la Interfaz Gráfica (Tkinter Frame)
-└── main.py                   <-- Archivo de arranque del programa
-└── README.md                 <-- Este archivo
+ddbb/gestión_libro.db <-- Archivo de la base de datos SQLite
 
+clases/clase_autor.py <-- Manager para Autores
+clases/clase_editorial.py    <-- Manager para Editoriales
+clases/clase_genero.py <-- Manager para Géneros
+clases/clase_libros.py <-- Clase Libro y funciones CRUD
+
+modelo/conexion.py <-- Establece conexión con BD (cierra, guarda cambios)
+modelo/consultas_dao.py <-- Módulo de Data Access Object (conexión y consultas SQL)
+
+vistas/vista.py <-- Módulo principal de la Interfaz Gráfica (Tkinter Frame)
+
+main.py <-- Archivo de arranque del programa
+
+README.md <-- Este archivo             
 
 ⚙️ Instalación y Requisitos
 
